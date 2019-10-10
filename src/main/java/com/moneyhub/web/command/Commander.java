@@ -8,7 +8,7 @@ public class Commander {
 	public static Command direct(HttpServletRequest request) {
 		Command cmd = null;
 		switch (Action.valueOf(request.getParameter("action").toUpperCase())) {
-		case MOVE:
+		case MOVE: //테스트
 			cmd = null;
 			break;
 		case LOGIN:
