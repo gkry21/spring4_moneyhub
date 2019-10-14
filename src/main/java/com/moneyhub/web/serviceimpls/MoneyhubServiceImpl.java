@@ -2,20 +2,21 @@ package com.moneyhub.web.serviceimpls;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.moneyhub.web.domains.MoneyhubBean;
+import com.moneyhub.web.domains.MoneyhubDTO;
+import com.moneyhub.web.mappers.MoneyhubMapper;
 import com.moneyhub.web.services.MoneyhubService;
-
+@Service
 public class MoneyhubServiceImpl implements MoneyhubService{
-	private static MoneyhubServiceImpl instance = new MoneyhubServiceImpl();
-	public static MoneyhubServiceImpl getInstance() {return instance;}
-	private MoneyhubServiceImpl() {}
+	@Autowired MoneyhubMapper mapper;
 
-	public void join(MoneyhubBean param) {
+	public void join(MoneyhubDTO param) {
 		System.out.println("joinService=");
 	}
 	
-	public MoneyhubBean login(MoneyhubBean param) {
+	public MoneyhubDTO login(MoneyhubDTO param) {
 		return null;
 	}
 

@@ -2,10 +2,13 @@ package com.moneyhub.web.services;
 
 import java.util.List;
 
-import com.moneyhub.web.domains.MoneyhubBean;
+import org.springframework.stereotype.Component;
 
+import com.moneyhub.web.domains.MoneyhubDTO;
+
+@Component
 public interface MoneyhubService {
-	public void join(MoneyhubBean param);
-	public MoneyhubBean login(MoneyhubBean param);
+	public void join(MoneyhubDTO param);
+	public MoneyhubDTO login(MoneyhubDTO param);
 	public List<String> viewMypage();
 }

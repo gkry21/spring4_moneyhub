@@ -1,11 +1,11 @@
 package com.moneyhub.web.domains;
 
 import java.io.Serializable;
-
+import org.springframework.stereotype.Component;
 import lombok.Data;
 
-@Data
-public class MoneyhubBean implements Serializable{
+@Data @Component
+public class MoneyhubDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String empno,
 	ename,
