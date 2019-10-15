@@ -23,7 +23,7 @@ public class AdminController {
 		model.addAttribute("count", count);
 		return "home";
 	}
-	
+	//test
 	@GetMapping("/info")
 	public String findAdminByAid(@RequestParam("aid")String aid,
 			@RequestParam("pwd")String pwd) {
